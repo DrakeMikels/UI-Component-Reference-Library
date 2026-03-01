@@ -1,0 +1,360 @@
+import { DesignSystemEntry } from '../types';
+
+export const designSystemEntries: DesignSystemEntry[] = [
+  {
+    id: 'material-3',
+    name: 'Material 3',
+    owner: 'Google',
+    description: 'Adaptive design language balancing expressive color roles with large platform coverage.',
+    technologies: ['Web Components', 'Android', 'Flutter'],
+    openSource: true,
+    componentCount: 68,
+    coverageScore: 96,
+    highlights: ['Dynamic color tokens', 'Comprehensive motion guidance', 'Large platform ecosystem']
+  },
+  {
+    id: 'carbon',
+    name: 'Carbon Design System',
+    owner: 'IBM',
+    description: 'Enterprise-focused system with strong accessibility and data-heavy interface patterns.',
+    technologies: ['React', 'Vanilla CSS', 'Angular'],
+    openSource: true,
+    componentCount: 84,
+    coverageScore: 97,
+    highlights: ['Data visualization patterns', 'Accessibility by default', 'Enterprise governance']
+  },
+  {
+    id: 'polaris',
+    name: 'Polaris',
+    owner: 'Shopify',
+    description: 'Commerce-first language tailored for merchant workflows and dense back-office tools.',
+    technologies: ['React', 'GraphQL', 'Tokens'],
+    openSource: true,
+    componentCount: 61,
+    coverageScore: 91,
+    highlights: ['Merchant workflow templates', 'Strong content standards', 'Tokenized theming']
+  },
+  {
+    id: 'atlassian',
+    name: 'Atlassian Design System',
+    owner: 'Atlassian',
+    description: 'Cross-product system optimized for collaborative SaaS applications and complex navigation.',
+    technologies: ['React', 'TypeScript', 'Design Tokens'],
+    openSource: false,
+    componentCount: 74,
+    coverageScore: 93,
+    highlights: ['Collaboration patterns', 'Mature icon language', 'Robust release process']
+  },
+  {
+    id: 'fluent-2',
+    name: 'Fluent 2',
+    owner: 'Microsoft',
+    description: 'Microsoft-wide system with productivity-focused components across desktop and cloud.',
+    technologies: ['React', 'Web Components', 'WinUI'],
+    openSource: true,
+    componentCount: 70,
+    coverageScore: 94,
+    highlights: ['Office-grade controls', 'Accessibility investment', 'Cross-platform consistency']
+  },
+  {
+    id: 'ant-design',
+    name: 'Ant Design',
+    owner: 'Ant Group',
+    description: 'Comprehensive enterprise UI library with high component density and global adoption.',
+    technologies: ['React', 'Less', 'TypeScript'],
+    openSource: true,
+    componentCount: 78,
+    coverageScore: 95,
+    highlights: ['Rich enterprise widgets', 'Form-heavy patterns', 'Strong table ecosystem']
+  },
+  {
+    id: 'chakra',
+    name: 'Chakra UI',
+    owner: 'Segun Adebayo',
+    description: 'Developer-friendly component system prioritizing composability and accessible primitives.',
+    technologies: ['React', 'Emotion', 'TypeScript'],
+    openSource: true,
+    componentCount: 52,
+    coverageScore: 88,
+    highlights: ['Style props ergonomics', 'Accessible defaults', 'Theming flexibility']
+  },
+  {
+    id: 'mantine',
+    name: 'Mantine',
+    owner: 'Mantine Team',
+    description: 'Large React toolkit with polished defaults and strong form/data integrations.',
+    technologies: ['React', 'TypeScript', 'CSS Modules'],
+    openSource: true,
+    componentCount: 110,
+    coverageScore: 98,
+    highlights: ['Very broad component set', 'Built-in hooks', 'First-class dark theme support']
+  },
+  {
+    id: 'radix-themes',
+    name: 'Radix Themes',
+    owner: 'WorkOS',
+    description: 'Token-driven layer on top of headless primitives for accessible product UIs.',
+    technologies: ['React', 'CSS Variables', 'TypeScript'],
+    openSource: true,
+    componentCount: 46,
+    coverageScore: 86,
+    highlights: ['Excellent primitive model', 'Predictable composition', 'Thoughtful token system']
+  },
+  {
+    id: 'mosaic-ui',
+    name: 'Mosaic UI',
+    owner: 'Sourcegraph',
+    description: 'Internal-first system focused on developer tooling surfaces and dense information.',
+    technologies: ['React', 'SCSS', 'Storybook'],
+    openSource: false,
+    componentCount: 44,
+    coverageScore: 79,
+    highlights: ['Developer tool ergonomics', 'Strong code examples', 'Stable internal APIs']
+  },
+  {
+    id: 'elastic-eui',
+    name: 'Elastic UI',
+    owner: 'Elastic',
+    description: 'High-coverage system tuned for observability and analytics-driven applications.',
+    technologies: ['React', 'Sass', 'TypeScript'],
+    openSource: true,
+    componentCount: 96,
+    coverageScore: 96,
+    highlights: ['Data app depth', 'Rich chart wrappers', 'Enterprise form controls']
+  },
+  {
+    id: 'primer',
+    name: 'Primer',
+    owner: 'GitHub',
+    description: 'GitHub design language balancing code-centric interfaces with broad brand needs.',
+    technologies: ['React', 'CSS Variables', 'TypeScript'],
+    openSource: true,
+    componentCount: 64,
+    coverageScore: 92,
+    highlights: ['Excellent docs quality', 'Token maturity', 'Large OSS footprint']
+  },
+  {
+    id: 'spectrum',
+    name: 'Spectrum',
+    owner: 'Adobe',
+    description: 'Adaptive system spanning desktop and creative tooling with strong visual precision.',
+    technologies: ['React', 'Web Components', 'Design Tokens'],
+    openSource: true,
+    componentCount: 72,
+    coverageScore: 94,
+    highlights: ['Cross-platform guidance', 'Well-defined motion principles', 'Creative workflow support']
+  },
+  {
+    id: 'baseweb',
+    name: 'Base Web',
+    owner: 'Uber',
+    description: 'Flexible React design system with extensive overrides for product customization.',
+    technologies: ['React', 'Styletron', 'TypeScript'],
+    openSource: true,
+    componentCount: 60,
+    coverageScore: 90,
+    highlights: ['Powerful override API', 'Dense enterprise controls', 'Accessibility support']
+  },
+  {
+    id: 'semi-design',
+    name: 'Semi Design',
+    owner: 'ByteDance',
+    description: 'System-oriented UI library focused on data dashboards and administrative products.',
+    technologies: ['React', 'TypeScript', 'Less'],
+    openSource: true,
+    componentCount: 80,
+    coverageScore: 93,
+    highlights: ['Large chart ecosystem', 'Practical admin components', 'Reasonable customization']
+  },
+  {
+    id: 'evergreen',
+    name: 'Evergreen',
+    owner: 'Segment',
+    description: 'Foundational system for enterprise apps with composable primitives and sensible defaults.',
+    technologies: ['React', 'TypeScript', 'CSS-in-JS'],
+    openSource: true,
+    componentCount: 45,
+    coverageScore: 82,
+    highlights: ['Simple API design', 'Low cognitive overhead', 'Strong onboarding story']
+  },
+  {
+    id: 'geist',
+    name: 'Geist UI',
+    owner: 'Vercel Community',
+    description: 'Minimalist component set inspired by product velocity and clean editorial rhythm.',
+    technologies: ['React', 'Stitches', 'TypeScript'],
+    openSource: true,
+    componentCount: 34,
+    coverageScore: 71,
+    highlights: ['Clean visual baseline', 'Fast setup', 'Small footprint']
+  },
+  {
+    id: 'govuk',
+    name: 'GOV.UK Design System',
+    owner: 'UK Government Digital Service',
+    description: 'Public service design framework with rigorous accessibility and content standards.',
+    technologies: ['Nunjucks', 'Sass', 'Vanilla JS'],
+    openSource: true,
+    componentCount: 39,
+    coverageScore: 89,
+    highlights: ['Content-first patterns', 'A11y rigor', 'Mature service patterns']
+  },
+  {
+    id: 'uswds',
+    name: 'US Web Design System',
+    owner: 'U.S. GSA',
+    description: 'Federal design foundation optimized for trust, consistency, and broad device coverage.',
+    technologies: ['Vanilla JS', 'Sass', 'Design Tokens'],
+    openSource: true,
+    componentCount: 43,
+    coverageScore: 90,
+    highlights: ['Public-sector guidance', 'Template resources', 'High readability standards']
+  },
+  {
+    id: 'lightning',
+    name: 'Lightning Design System',
+    owner: 'Salesforce',
+    description: 'Salesforce ecosystem system with dense data patterns and CRM-centric workflows.',
+    technologies: ['Web Components', 'Tokens', 'Aura'],
+    openSource: false,
+    componentCount: 66,
+    coverageScore: 92,
+    highlights: ['CRM pattern depth', 'Large icon set', 'Strong state models']
+  },
+  {
+    id: 'palantir-blueprint',
+    name: 'Blueprint',
+    owner: 'Palantir',
+    description: 'Desktop-oriented React toolkit for information-dense operational interfaces.',
+    technologies: ['React', 'SCSS', 'TypeScript'],
+    openSource: true,
+    componentCount: 58,
+    coverageScore: 87,
+    highlights: ['Desktop app feel', 'Complex table controls', 'Data workflow orientation']
+  },
+  {
+    id: 'arco',
+    name: 'Arco Design',
+    owner: 'ByteDance',
+    description: 'Internationalized design system with broad component coverage for enterprise products.',
+    technologies: ['React', 'Vue', 'TypeScript'],
+    openSource: true,
+    componentCount: 76,
+    coverageScore: 94,
+    highlights: ['React and Vue parity', 'Tokenized theming', 'Strong data components']
+  },
+  {
+    id: 'quasar',
+    name: 'Quasar UI',
+    owner: 'Quasar Team',
+    description: 'Cross-platform Vue framework with integrated component suite and tooling.',
+    technologies: ['Vue', 'Sass', 'TypeScript'],
+    openSource: true,
+    componentCount: 92,
+    coverageScore: 93,
+    highlights: ['Mobile + desktop targets', 'CLI productivity', 'Broad widget inventory']
+  },
+  {
+    id: 'naive-ui',
+    name: 'Naive UI',
+    owner: 'TuSimple OSS',
+    description: 'Type-safe Vue component system with extensive controls and modern defaults.',
+    technologies: ['Vue', 'TypeScript', 'CSS Variables'],
+    openSource: true,
+    componentCount: 88,
+    coverageScore: 92,
+    highlights: ['TypeScript-first API', 'Dense enterprise widgets', 'Good default themes']
+  },
+  {
+    id: 'shadcn',
+    name: 'shadcn/ui',
+    owner: 'Community',
+    description: 'Code-first component distribution approach centered around composable primitives.',
+    technologies: ['React', 'Tailwind', 'Radix'],
+    openSource: true,
+    componentCount: 49,
+    coverageScore: 85,
+    highlights: ['Copy-in ownership model', 'Excellent composability', 'Modern Tailwind baseline']
+  },
+  {
+    id: 'windmill',
+    name: 'Windmill',
+    owner: 'Windmill OSS',
+    description: 'Tailwind-driven React dashboard system with neutral visual rhythm and fast setup.',
+    technologies: ['React', 'Tailwind', 'TypeScript'],
+    openSource: true,
+    componentCount: 36,
+    coverageScore: 75,
+    highlights: ['Dashboard templates', 'Quick bootstrap', 'Simple customization']
+  },
+  {
+    id: 'orbit',
+    name: 'Orbit',
+    owner: 'Kiwi.com',
+    description: 'Travel-focused system with robust localization patterns and high usability standards.',
+    technologies: ['React', 'TypeScript', 'Styled Components'],
+    openSource: true,
+    componentCount: 55,
+    coverageScore: 88,
+    highlights: ['Localization tooling', 'Travel domain patterns', 'Good documentation clarity']
+  },
+  {
+    id: 'mesh',
+    name: 'Mesh',
+    owner: 'Zalando',
+    description: 'Fashion-commerce design language balancing editorial layouts with transactional UI.',
+    technologies: ['React', 'Sass', 'Design Tokens'],
+    openSource: false,
+    componentCount: 47,
+    coverageScore: 81,
+    highlights: ['Editorial-commerce blend', 'Scalable token model', 'Brand flexibility']
+  },
+  {
+    id: 'voyager',
+    name: 'Voyager DS',
+    owner: 'TravelTech Group',
+    description: 'Operational design system for booking flows, trip management, and status-heavy views.',
+    technologies: ['React', 'Tailwind', 'Storybook'],
+    openSource: false,
+    componentCount: 41,
+    coverageScore: 78,
+    highlights: ['Booking flow primitives', 'Reliable form patterns', 'Operational dashboards']
+  },
+  {
+    id: 'horizon',
+    name: 'Horizon UI Kit',
+    owner: 'FinSuite',
+    description: 'Financial platform system with compliance-minded interactions and dense analytics.',
+    technologies: ['React', 'TypeScript', 'CSS Variables'],
+    openSource: false,
+    componentCount: 53,
+    coverageScore: 84,
+    highlights: ['Compliance-ready components', 'Strong data display patterns', 'Theming at scale']
+  },
+  {
+    id: 'northstar',
+    name: 'Northstar',
+    owner: 'Data Cloud Labs',
+    description: 'B2B platform system tuned for admin workflows, telemetry, and multitenant controls.',
+    technologies: ['React', 'Tailwind', 'TypeScript'],
+    openSource: false,
+    componentCount: 57,
+    coverageScore: 86,
+    highlights: ['Admin-first composition', 'Token governance', 'Good telemetry UI patterns']
+  },
+  {
+    id: 'aurora-system',
+    name: 'Aurora System',
+    owner: 'Aurora Health',
+    description: 'Healthcare-focused interface library with accessibility and trust cues front and center.',
+    technologies: ['React', 'Sass', 'Storybook'],
+    openSource: false,
+    componentCount: 40,
+    coverageScore: 80,
+    highlights: ['Healthcare data legibility', 'Strong alert semantics', 'Form clarity standards']
+  }
+];
+
+export const designSystemTechnologies = Array.from(
+  new Set(designSystemEntries.flatMap((system) => system.technologies))
+).sort((a, b) => a.localeCompare(b));
