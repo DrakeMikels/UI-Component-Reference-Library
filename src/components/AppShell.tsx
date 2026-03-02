@@ -1,4 +1,4 @@
-import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { Moon, Search, Sun } from 'lucide-react';
 import { useCallback, useMemo, useState } from 'react';
 import { NavLink, Outlet, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
@@ -27,7 +27,6 @@ export const AppShell = () => {
   const { theme, toggleTheme } = useTheme();
   const navigate = useNavigate();
   const location = useLocation();
-  const shouldReduceMotion = useReducedMotion();
 
   const routeQueryKey = useMemo(() => getRouteQueryKey(location.pathname), [location.pathname]);
   const query = getScopedQuery(searchParams, routeQueryKey);
@@ -178,12 +177,12 @@ export const AppShell = () => {
       </header>
 
       <main id="content" className="mx-auto w-full max-w-7xl px-4 pb-16 pt-8 md:px-6">
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait" initial={false}>
           <motion.div
             key={location.pathname}
-            initial={shouldReduceMotion ? undefined : { opacity: 0, y: 12 }}
-            animate={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
-            exit={shouldReduceMotion ? undefined : { opacity: 0, y: -8 }}
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.2 }}
           >
             <Outlet />
