@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run build)",
+      "Bash(npx tsc -b --noEmit)",
+      "Bash(node_modules/.bin/tsc -b --noEmit)",
+      "Bash(npm install)",
+      "Bash(node_modules/.bin/vite build)",
+      "Bash(git add .gitignore package.json package-lock.json src/components/AppShell.tsx src/components/ComponentCard.tsx src/components/ComponentDetailModal.tsx src/components/LiveComponentExamples.tsx src/index.css src/components/live-demos/)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(git add src/components/AppShell.tsx)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(git add src/components/ComponentCard.tsx src/hooks/useTheme.ts)",
+      "Bash(git push origin main)",
+      "Bash(git add src/components/ComponentCard.tsx)",
+      "Bash(git add src/types.ts src/data/designSystems.ts src/components/DesignSystemCard.tsx src/components/DesignSystemDetailModal.tsx src/pages/DesignSystemsPage.tsx)",
+      "WebFetch(domain:component.gallery)",
+      "mcp__Control_Chrome__open_url",
+      "mcp__Control_Chrome__get_current_tab",
+      "mcp__Control_Chrome__execute_javascript",
+      "Bash(git add src/index.css tailwind.config.ts src/components/AppShell.tsx src/components/ComponentCard.tsx src/pages/ComponentsPage.tsx src/pages/DesignSystemsPage.tsx src/components/DesignSystemCard.tsx)",
+      "Bash(git add src/index.css src/components/AppShell.tsx src/components/ComponentCard.tsx src/components/DesignSystemCard.tsx src/pages/ComponentsPage.tsx src/pages/DesignSystemsPage.tsx)",
+      "Bash(git add src/components/ComponentCard.tsx src/pages/ComponentsPage.tsx)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git add -A)"
+    ]
+  }
+}
