@@ -153,12 +153,12 @@ export const ComponentsPage = () => {
         className="swiss-grid-panel relative overflow-hidden border-2 border-ink-300 bg-white p-6 dark:border-ink-700 dark:bg-ink-900 md:p-10"
       >
         <div className="relative z-10 max-w-3xl">
-          <p className="text-[11px] uppercase tracking-[0.28em] text-ink-500 dark:text-ink-400">Interactive Catalog</p>
+          <p className="text-[11px] uppercase tracking-[0.28em] text-ink-500 dark:text-ink-400">Component Reference</p>
           <h2 className="mt-3 font-display text-4xl leading-[1.05] tracking-tight text-ink-900 dark:text-ink-50 md:text-6xl">
-            Explore components through practical metadata, not screenshots alone.
+            UI components, indexed.
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-ink-700 dark:text-ink-200 md:text-base">
-            Compare naming conventions, discover implementation clues, and reference usage patterns across modern UI stacks. Search, filter, and share a specific state via URL parameters.
+            Browse components with live previews and usage notes. Filter by stack or tag to find what you need.
           </p>
         </div>
         <div className="mt-6 h-px bg-ink-300 dark:bg-ink-700" />
@@ -195,7 +195,7 @@ export const ComponentsPage = () => {
         </div>
 
         <div>
-          <p className="mb-2 text-xs uppercase tracking-[0.15em] text-ink-500 dark:text-ink-400">Filter chips</p>
+          <p className="mb-2 text-xs uppercase tracking-[0.15em] text-ink-500 dark:text-ink-400">Filter by tag</p>
           <div className="flex flex-wrap gap-2">
             {featuredFilterTags.map((tag) => (
               <TagChip key={tag} label={tag} active={selectedTags.includes(tag)} onClick={() => toggleTag(tag)} />
