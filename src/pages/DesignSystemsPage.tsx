@@ -1,7 +1,8 @@
 import { motion, useReducedMotion } from 'framer-motion';
-import { useMemo } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { DesignSystemCard } from '../components/DesignSystemCard';
+import { DesignSystemDetailModal } from '../components/DesignSystemDetailModal';
 import { TagChip } from '../components/ui/TagChip';
 import { designSystemEntries, designSystemTechnologies } from '../data/designSystems';
 import {
@@ -30,6 +31,34 @@ const featuredTechFilters = designSystemTechnologies.filter((technology) =>
 export const DesignSystemsPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const shouldReduceMotion = useReducedMotion();
+  const [activeId, setActiveId] = useState<string | null>(null);
+
+  const focusId = searchParams.get('focus');
+
+  useEffect(() => {
+    if (focusId && designSystemEntries.some((s) => s.id === focusId)) {
+      setActiveId(focusId);
+    }
+  }, [focusId]);
+
+  const openSystem = (id: string) => {
+    setActiveId(id);
+    const next = new URLSearchParams(searchParams);
+    next.set('focus', id);
+    setSearchParams(next, { replace: true });
+  };
+
+  const closeModal = () => {
+    setActiveId(null);
+    const next = new URLSearchParams(searchParams);
+    next.delete('focus');
+    setSearchParams(next, { replace: true });
+  };
+
+  const selectedSystem = useMemo(
+    () => designSystemEntries.find((s) => s.id === activeId) ?? null,
+    [activeId]
+  );
 
   const query = getScopedQuery(searchParams, DESIGN_SYSTEM_QUERY_KEY).trim().toLowerCase();
   const sort = toDesignSystemSort(searchParams.get('sort'));
@@ -182,7 +211,7 @@ export const DesignSystemsPage = () => {
 
       <motion.section layout className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3" aria-live="polite">
         {filteredSystems.length > 0 ? (
-          filteredSystems.map((system) => <DesignSystemCard key={system.id} system={system} />)
+          filteredSystems.map((system) => <DesignSystemCard key={system.id} system={system} onSelect={openSystem} />)
         ) : (
           <article className="col-span-full border-2 border-dashed border-ink-300 bg-white p-8 text-center dark:border-ink-700 dark:bg-ink-900">
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-ink-500 dark:text-ink-400">No Results</p>
@@ -218,6 +247,8 @@ export const DesignSystemsPage = () => {
           </article>
         )}
       </motion.section>
+
+      <DesignSystemDetailModal system={selectedSystem} onClose={closeModal} />
     </section>
   );
 };

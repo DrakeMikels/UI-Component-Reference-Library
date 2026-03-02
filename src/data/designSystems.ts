@@ -10,7 +10,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 68,
     coverageScore: 96,
-    highlights: ['Dynamic color tokens', 'Comprehensive motion guidance', 'Large platform ecosystem']
+    highlights: ['Dynamic color tokens', 'Comprehensive motion guidance', 'Large platform ecosystem'],
+    accent: '#6750A4',
+    accentFg: '#fff',
+    radius: 'lg',
+    docsUrl: 'https://m3.material.io/components'
   },
   {
     id: 'carbon',
@@ -21,7 +25,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 84,
     coverageScore: 97,
-    highlights: ['Data visualization patterns', 'Accessibility by default', 'Enterprise governance']
+    highlights: ['Data visualization patterns', 'Accessibility by default', 'Enterprise governance'],
+    accent: '#0f62fe',
+    accentFg: '#fff',
+    radius: 'none',
+    docsUrl: 'https://carbondesignsystem.com'
   },
   {
     id: 'polaris',
@@ -32,7 +40,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 61,
     coverageScore: 91,
-    highlights: ['Merchant workflow templates', 'Strong content standards', 'Tokenized theming']
+    highlights: ['Merchant workflow templates', 'Strong content standards', 'Tokenized theming'],
+    accent: '#008060',
+    accentFg: '#fff',
+    radius: 'sm',
+    docsUrl: 'https://polaris.shopify.com'
   },
   {
     id: 'atlassian',
@@ -43,7 +55,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: false,
     componentCount: 74,
     coverageScore: 93,
-    highlights: ['Collaboration patterns', 'Mature icon language', 'Robust release process']
+    highlights: ['Collaboration patterns', 'Mature icon language', 'Robust release process'],
+    accent: '#0052CC',
+    accentFg: '#fff',
+    radius: 'sm',
+    docsUrl: 'https://atlassian.design/components'
   },
   {
     id: 'fluent-2',
@@ -54,7 +70,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 70,
     coverageScore: 94,
-    highlights: ['Office-grade controls', 'Accessibility investment', 'Cross-platform consistency']
+    highlights: ['Office-grade controls', 'Accessibility investment', 'Cross-platform consistency'],
+    accent: '#0078D4',
+    accentFg: '#fff',
+    radius: 'md',
+    docsUrl: 'https://fluent2.microsoft.design'
   },
   {
     id: 'ant-design',
@@ -65,7 +85,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 78,
     coverageScore: 95,
-    highlights: ['Rich enterprise widgets', 'Form-heavy patterns', 'Strong table ecosystem']
+    highlights: ['Rich enterprise widgets', 'Form-heavy patterns', 'Strong table ecosystem'],
+    accent: '#1677ff',
+    accentFg: '#fff',
+    radius: 'sm',
+    docsUrl: 'https://ant.design/components/overview'
   },
   {
     id: 'chakra',
@@ -76,7 +100,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 52,
     coverageScore: 88,
-    highlights: ['Style props ergonomics', 'Accessible defaults', 'Theming flexibility']
+    highlights: ['Style props ergonomics', 'Accessible defaults', 'Theming flexibility'],
+    accent: '#319795',
+    accentFg: '#fff',
+    radius: 'md',
+    docsUrl: 'https://v2.chakra-ui.com/docs/components'
   },
   {
     id: 'mantine',
@@ -87,7 +115,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 110,
     coverageScore: 98,
-    highlights: ['Very broad component set', 'Built-in hooks', 'First-class dark theme support']
+    highlights: ['Very broad component set', 'Built-in hooks', 'First-class dark theme support'],
+    accent: '#228be6',
+    accentFg: '#fff',
+    radius: 'sm',
+    docsUrl: 'https://mantine.dev/core'
   },
   {
     id: 'radix-themes',
@@ -98,7 +130,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 46,
     coverageScore: 86,
-    highlights: ['Excellent primitive model', 'Predictable composition', 'Thoughtful token system']
+    highlights: ['Excellent primitive model', 'Predictable composition', 'Thoughtful token system'],
+    accent: '#6e56cf',
+    accentFg: '#fff',
+    radius: 'md',
+    docsUrl: 'https://www.radix-ui.com/themes/docs/overview/getting-started'
   },
   {
     id: 'mosaic-ui',
@@ -109,7 +145,10 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: false,
     componentCount: 44,
     coverageScore: 79,
-    highlights: ['Developer tool ergonomics', 'Strong code examples', 'Stable internal APIs']
+    highlights: ['Developer tool ergonomics', 'Strong code examples', 'Stable internal APIs'],
+    accent: '#a112ff',
+    accentFg: '#fff',
+    radius: 'none'
   },
   {
     id: 'elastic-eui',
@@ -120,7 +159,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 96,
     coverageScore: 96,
-    highlights: ['Data app depth', 'Rich chart wrappers', 'Enterprise form controls']
+    highlights: ['Data app depth', 'Rich chart wrappers', 'Enterprise form controls'],
+    accent: '#006BB4',
+    accentFg: '#fff',
+    radius: 'md',
+    docsUrl: 'https://eui.elastic.co'
   },
   {
     id: 'primer',
@@ -131,7 +174,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 64,
     coverageScore: 92,
-    highlights: ['Excellent docs quality', 'Token maturity', 'Large OSS footprint']
+    highlights: ['Excellent docs quality', 'Token maturity', 'Large OSS footprint'],
+    accent: '#0969da',
+    accentFg: '#fff',
+    radius: 'md',
+    docsUrl: 'https://primer.style/components'
   },
   {
     id: 'spectrum',
@@ -142,7 +189,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 72,
     coverageScore: 94,
-    highlights: ['Cross-platform guidance', 'Well-defined motion principles', 'Creative workflow support']
+    highlights: ['Cross-platform guidance', 'Well-defined motion principles', 'Creative workflow support'],
+    accent: '#e03e00',
+    accentFg: '#fff',
+    radius: 'sm',
+    docsUrl: 'https://spectrum.adobe.com'
   },
   {
     id: 'baseweb',
@@ -153,7 +204,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 60,
     coverageScore: 90,
-    highlights: ['Powerful override API', 'Dense enterprise controls', 'Accessibility support']
+    highlights: ['Powerful override API', 'Dense enterprise controls', 'Accessibility support'],
+    accent: '#276EF1',
+    accentFg: '#fff',
+    radius: 'sm',
+    docsUrl: 'https://baseweb.design'
   },
   {
     id: 'semi-design',
@@ -164,7 +219,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 80,
     coverageScore: 93,
-    highlights: ['Large chart ecosystem', 'Practical admin components', 'Reasonable customization']
+    highlights: ['Large chart ecosystem', 'Practical admin components', 'Reasonable customization'],
+    accent: '#6241ff',
+    accentFg: '#fff',
+    radius: 'md',
+    docsUrl: 'https://semi.design/en-US'
   },
   {
     id: 'evergreen',
@@ -175,7 +234,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 45,
     coverageScore: 82,
-    highlights: ['Simple API design', 'Low cognitive overhead', 'Strong onboarding story']
+    highlights: ['Simple API design', 'Low cognitive overhead', 'Strong onboarding story'],
+    accent: '#47B881',
+    accentFg: '#fff',
+    radius: 'md',
+    docsUrl: 'https://evergreen.segment.com'
   },
   {
     id: 'geist',
@@ -186,7 +249,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 34,
     coverageScore: 71,
-    highlights: ['Clean visual baseline', 'Fast setup', 'Small footprint']
+    highlights: ['Clean visual baseline', 'Fast setup', 'Small footprint'],
+    accent: '#000000',
+    accentFg: '#fff',
+    radius: 'sm',
+    docsUrl: 'https://vercel.com/geist/components'
   },
   {
     id: 'govuk',
@@ -197,7 +264,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 39,
     coverageScore: 89,
-    highlights: ['Content-first patterns', 'A11y rigor', 'Mature service patterns']
+    highlights: ['Content-first patterns', 'A11y rigor', 'Mature service patterns'],
+    accent: '#00703C',
+    accentFg: '#fff',
+    radius: 'none',
+    docsUrl: 'https://design-system.service.gov.uk'
   },
   {
     id: 'uswds',
@@ -208,7 +279,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 43,
     coverageScore: 90,
-    highlights: ['Public-sector guidance', 'Template resources', 'High readability standards']
+    highlights: ['Public-sector guidance', 'Template resources', 'High readability standards'],
+    accent: '#005EA2',
+    accentFg: '#fff',
+    radius: 'none',
+    docsUrl: 'https://designsystem.digital.gov'
   },
   {
     id: 'lightning',
@@ -219,7 +294,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: false,
     componentCount: 66,
     coverageScore: 92,
-    highlights: ['CRM pattern depth', 'Large icon set', 'Strong state models']
+    highlights: ['CRM pattern depth', 'Large icon set', 'Strong state models'],
+    accent: '#1589EE',
+    accentFg: '#fff',
+    radius: 'sm',
+    docsUrl: 'https://www.lightningdesignsystem.com'
   },
   {
     id: 'palantir-blueprint',
@@ -230,7 +309,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 58,
     coverageScore: 87,
-    highlights: ['Desktop app feel', 'Complex table controls', 'Data workflow orientation']
+    highlights: ['Desktop app feel', 'Complex table controls', 'Data workflow orientation'],
+    accent: '#137CBD',
+    accentFg: '#fff',
+    radius: 'none',
+    docsUrl: 'https://blueprintjs.com'
   },
   {
     id: 'arco',
@@ -241,7 +324,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 76,
     coverageScore: 94,
-    highlights: ['React and Vue parity', 'Tokenized theming', 'Strong data components']
+    highlights: ['React and Vue parity', 'Tokenized theming', 'Strong data components'],
+    accent: '#165DFF',
+    accentFg: '#fff',
+    radius: 'md',
+    docsUrl: 'https://arco.design/react'
   },
   {
     id: 'quasar',
@@ -252,7 +339,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 92,
     coverageScore: 93,
-    highlights: ['Mobile + desktop targets', 'CLI productivity', 'Broad widget inventory']
+    highlights: ['Mobile + desktop targets', 'CLI productivity', 'Broad widget inventory'],
+    accent: '#1976D2',
+    accentFg: '#fff',
+    radius: 'md',
+    docsUrl: 'https://quasar.dev/vue-components'
   },
   {
     id: 'naive-ui',
@@ -263,7 +354,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 88,
     coverageScore: 92,
-    highlights: ['TypeScript-first API', 'Dense enterprise widgets', 'Good default themes']
+    highlights: ['TypeScript-first API', 'Dense enterprise widgets', 'Good default themes'],
+    accent: '#18A058',
+    accentFg: '#fff',
+    radius: 'md',
+    docsUrl: 'https://www.naiveui.com'
   },
   {
     id: 'shadcn',
@@ -274,7 +369,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 49,
     coverageScore: 85,
-    highlights: ['Copy-in ownership model', 'Excellent composability', 'Modern Tailwind baseline']
+    highlights: ['Copy-in ownership model', 'Excellent composability', 'Modern Tailwind baseline'],
+    accent: '#18181B',
+    accentFg: '#fff',
+    radius: 'md',
+    docsUrl: 'https://ui.shadcn.com/docs'
   },
   {
     id: 'windmill',
@@ -285,7 +384,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 36,
     coverageScore: 75,
-    highlights: ['Dashboard templates', 'Quick bootstrap', 'Simple customization']
+    highlights: ['Dashboard templates', 'Quick bootstrap', 'Simple customization'],
+    accent: '#6366F1',
+    accentFg: '#fff',
+    radius: 'lg',
+    docsUrl: 'https://windmillui.com'
   },
   {
     id: 'orbit',
@@ -296,7 +399,11 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: true,
     componentCount: 55,
     coverageScore: 88,
-    highlights: ['Localization tooling', 'Travel domain patterns', 'Good documentation clarity']
+    highlights: ['Localization tooling', 'Travel domain patterns', 'Good documentation clarity'],
+    accent: '#00A58E',
+    accentFg: '#fff',
+    radius: 'md',
+    docsUrl: 'https://orbit.kiwi'
   },
   {
     id: 'mesh',
@@ -307,7 +414,10 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: false,
     componentCount: 47,
     coverageScore: 81,
-    highlights: ['Editorial-commerce blend', 'Scalable token model', 'Brand flexibility']
+    highlights: ['Editorial-commerce blend', 'Scalable token model', 'Brand flexibility'],
+    accent: '#FF6900',
+    accentFg: '#fff',
+    radius: 'none'
   },
   {
     id: 'voyager',
@@ -318,7 +428,10 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: false,
     componentCount: 41,
     coverageScore: 78,
-    highlights: ['Booking flow primitives', 'Reliable form patterns', 'Operational dashboards']
+    highlights: ['Booking flow primitives', 'Reliable form patterns', 'Operational dashboards'],
+    accent: '#0064D2',
+    accentFg: '#fff',
+    radius: 'sm'
   },
   {
     id: 'horizon',
@@ -329,7 +442,10 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: false,
     componentCount: 53,
     coverageScore: 84,
-    highlights: ['Compliance-ready components', 'Strong data display patterns', 'Theming at scale']
+    highlights: ['Compliance-ready components', 'Strong data display patterns', 'Theming at scale'],
+    accent: '#1B4F8A',
+    accentFg: '#fff',
+    radius: 'sm'
   },
   {
     id: 'northstar',
@@ -340,7 +456,10 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: false,
     componentCount: 57,
     coverageScore: 86,
-    highlights: ['Admin-first composition', 'Token governance', 'Good telemetry UI patterns']
+    highlights: ['Admin-first composition', 'Token governance', 'Good telemetry UI patterns'],
+    accent: '#6366F1',
+    accentFg: '#fff',
+    radius: 'md'
   },
   {
     id: 'aurora-system',
@@ -351,7 +470,10 @@ export const designSystemEntries: DesignSystemEntry[] = [
     openSource: false,
     componentCount: 40,
     coverageScore: 80,
-    highlights: ['Healthcare data legibility', 'Strong alert semantics', 'Form clarity standards']
+    highlights: ['Healthcare data legibility', 'Strong alert semantics', 'Form clarity standards'],
+    accent: '#1967D2',
+    accentFg: '#fff',
+    radius: 'sm'
   }
 ];
 

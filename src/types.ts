@@ -16,6 +16,8 @@ export interface ComponentEntry {
   relatedIds: string[];
 }
 
+export type DSRadius = 'none' | 'sm' | 'md' | 'lg' | 'full';
+
 export interface DesignSystemEntry {
   id: string;
   name: string;
@@ -26,6 +28,10 @@ export interface DesignSystemEntry {
   componentCount: number;
   coverageScore: number;
   highlights: string[];
+  accent: string;
+  accentFg: string;
+  radius: DSRadius;
+  docsUrl?: string;
 }
 
 export interface PaletteAction {
