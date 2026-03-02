@@ -44,7 +44,7 @@ export const AboutPage = () => {
             community resource.
           </p>
           <a
-            href="https://github.com"
+            href="https://github.com/DrakeMikels/UI-Component-Reference-Library"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-pine-700 underline decoration-amberline decoration-2 underline-offset-4 transition hover:text-pine-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine-500 dark:text-pine-300 dark:hover:text-pine-200"
