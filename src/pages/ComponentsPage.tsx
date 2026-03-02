@@ -150,7 +150,7 @@ export const ComponentsPage = () => {
       <motion.section
         initial={shouldReduceMotion ? undefined : { opacity: 0, y: 10 }}
         animate={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
-        className="relative overflow-hidden border border-ink-200 bg-white p-6 dark:border-ink-700 dark:bg-ink-900 md:p-10"
+        className="swiss-grid-panel relative overflow-hidden border-2 border-ink-300 bg-white p-6 dark:border-ink-700 dark:bg-ink-900 md:p-10"
       >
         <div className="relative z-10 max-w-3xl">
           <p className="text-[11px] uppercase tracking-[0.28em] text-ink-500 dark:text-ink-400">Interactive Catalog</p>
@@ -169,7 +169,7 @@ export const ComponentsPage = () => {
         </div>
       </motion.section>
 
-      <section className="space-y-4 border border-ink-200 bg-white p-4 dark:border-ink-700 dark:bg-ink-900 md:p-5">
+      <section className="space-y-4 border-2 border-ink-300 bg-white p-4 dark:border-ink-700 dark:bg-ink-900 md:p-5">
         <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <h3 className="font-display text-2xl tracking-tight text-ink-900 dark:text-ink-50">Component Index</h3>

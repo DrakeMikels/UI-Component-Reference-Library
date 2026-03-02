@@ -4,6 +4,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .swiss-page-bg {
+    @apply bg-ink-50 dark:bg-ink-900;
+    background-image: linear-gradient(to right, rgba(31, 27, 23, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(31, 27, 23, 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .dark .swiss-page-bg {
+    background-image: linear-gradient(to right, rgba(247, 246, 243, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(247, 246, 243, 0.08) 1px, transparent 1px);
+  }
+
+  .swiss-grid-panel {
+    background-image: linear-gradient(to right, rgba(31, 27, 23, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(31, 27, 23, 0.06) 1px, transparent 1px);
+    background-size: 24px 24px;
+    background-position: -1px -1px;
+  }
+
+  .dark .swiss-grid-panel {
+    background-image: linear-gradient(to right, rgba(247, 246, 243, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(247, 246, 243, 0.08) 1px, transparent 1px);
+  }
+}
+
 @layer base {
   :root {
     color-scheme: light;
