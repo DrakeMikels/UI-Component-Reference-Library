@@ -814,9 +814,7 @@ export const ComponentCard = ({ component, onSelect }: ComponentCardProps) => {
         className="absolute inset-0 z-30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine-500 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-50 dark:focus-visible:ring-offset-ink-900"
         aria-label={`Open details for ${component.name}`}
       />
-      <div className="pointer-events-none absolute right-4 top-4 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink-500 dark:text-ink-400">
-        {component.exampleCount} examples
-      </div>
+
 
       <ComponentCardPreview component={component} />
 
