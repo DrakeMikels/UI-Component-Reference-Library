@@ -14,7 +14,7 @@ const getInitialTheme = (): Theme => {
     return saved;
   }
 
-  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  return 'light';
 };
 
 export const useTheme = () => {

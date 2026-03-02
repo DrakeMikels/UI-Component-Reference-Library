@@ -144,11 +144,86 @@ const previewToneClassByFamily: Record<PreviewFamily, string> = {
 const countMatches = (source: string, keywords: string[]): number =>
   keywords.reduce((score, keyword) => (source.includes(keyword) ? score + 1 : score), 0);
 
-const searchPreviewIds = new Set(['command-menu', 'spotlight-search', 'combobox']);
+const previewFamilyById: Partial<Record<string, PreviewFamily>> = {
+  // Action buttons
+  'button': 'actionButtons',
+  'icon-button': 'actionButtons',
+  'split-button': 'actionButtons',
+  // Text / form inputs
+  'input-text': 'textFormInputs',
+  'textarea': 'textFormInputs',
+  'form-field': 'textFormInputs',
+  'date-picker': 'textFormInputs',
+  'time-picker': 'textFormInputs',
+  'color-picker': 'textFormInputs',
+  'file-upload': 'textFormInputs',
+  // Search / discovery
+  'command-menu': 'searchDiscovery',
+  'spotlight-search': 'searchDiscovery',
+  'combobox': 'searchDiscovery',
+  // Selection controls
+  'checkbox': 'selectionControls',
+  'radio-group': 'selectionControls',
+  'switch': 'selectionControls',
+  'slider': 'selectionControls',
+  'range-slider': 'selectionControls',
+  'select': 'selectionControls',
+  'chip': 'selectionControls',
+  'segmented-control': 'selectionControls',
+  'theme-toggle': 'selectionControls',
+  // Navigation
+  'pagination': 'navigation',
+  'tabs': 'navigation',
+  'accordion': 'navigation',
+  'breadcrumb': 'navigation',
+  'navbar': 'navigation',
+  'sidebar': 'navigation',
+  'footer': 'navigation',
+  'mega-menu': 'navigation',
+  'tree-view': 'navigation',
+  // Data tables
+  'table': 'dataTable',
+  'data-grid': 'dataTable',
+  'stat': 'dataTable',
+  'comparison-table': 'dataTable',
+  'data-list-detail': 'dataTable',
+  'filter-builder': 'dataTable',
+  // Overlay / dialog
+  'dropdown-menu': 'overlayDialog',
+  'tooltip': 'overlayDialog',
+  'popover': 'overlayDialog',
+  'modal': 'overlayDialog',
+  'drawer': 'overlayDialog',
+  // Feedback / loading
+  'toast': 'feedbackLoading',
+  'alert-banner': 'feedbackLoading',
+  'badge': 'feedbackLoading',
+  'skeleton': 'feedbackLoading',
+  'spinner': 'feedbackLoading',
+  // Chart / visual
+  'chart-line': 'chartVisual',
+  'chart-bar': 'chartVisual',
+  'chart-pie': 'chartVisual',
+  'map': 'chartVisual',
+  // Workflow
+  'stepper': 'workflow',
+  'timeline': 'workflow',
+  'kanban-board': 'workflow',
+  'calendar': 'workflow',
+  'activity-feed': 'workflow',
+  'progress-bar': 'workflow',
+  // Content / identity
+  'card': 'contentIdentity',
+  'list': 'contentIdentity',
+  'empty-state': 'contentIdentity',
+  'avatar': 'contentIdentity',
+  'rich-text-editor': 'contentIdentity'
+};
 
 const resolvePreviewFamily = (component: ComponentEntry): PreviewFamily => {
-  if (searchPreviewIds.has(component.id)) {
-    return 'searchDiscovery';
+  const explicit = previewFamilyById[component.id];
+  if (explicit) {
+    return explicit;
   }
 
   const idText = component.id.toLowerCase();
