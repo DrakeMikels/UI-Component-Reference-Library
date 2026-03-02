@@ -219,7 +219,7 @@ export const ComponentsPage = () => {
 
       <motion.section
         layout
-        className="flex flex-col [&>article+article]:-mt-px"
+        className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3"
         aria-live="polite"
         aria-label="Component result cards"
       >
