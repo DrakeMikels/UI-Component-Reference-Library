@@ -62,7 +62,7 @@ export const ComponentDetailModal = ({
   onSelectRelated
 }: ComponentDetailModalProps) => {
   if (!component) {
-    return <Modal title="Component details" open={false} onClose={onClose}>{null}</Modal>;
+    return null;
   }
 
   return (

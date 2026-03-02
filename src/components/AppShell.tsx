@@ -1,6 +1,6 @@
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { Moon, Search, Sun } from 'lucide-react';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { NavLink, Outlet, useLocation, useNavigate, useSearchParams } from 'react-router-dom';
 import { componentEntries, componentTags, featuredComponentIds } from '../data/components';
 import { useHotkeys } from '../hooks/useHotkeys';
@@ -8,6 +8,7 @@ import { useTheme } from '../hooks/useTheme';
 import { PaletteAction } from '../types';
 import { classNames } from '../utils/classNames';
 import { DESIGN_SYSTEM_QUERY_KEY, getRouteQueryKey, getScopedQuery, LEGACY_QUERY_KEY } from '../utils/query';
+
 import { CommandPalette } from './CommandPalette';
 
 const navItems = [
@@ -37,22 +38,6 @@ export const AppShell = () => {
   const openPalette = useCallback(() => setIsPaletteOpen(true), []);
 
   useHotkeys(onPaletteShortcut, openPalette);
-
-  useEffect(() => {
-    if (routeQueryKey === LEGACY_QUERY_KEY) {
-      return;
-    }
-
-    const scopedQuery = searchParams.get(routeQueryKey);
-    const legacyQuery = searchParams.get(LEGACY_QUERY_KEY);
-
-    if (scopedQuery === null && legacyQuery) {
-      const next = new URLSearchParams(searchParams);
-      next.set(routeQueryKey, legacyQuery);
-      next.delete(LEGACY_QUERY_KEY);
-      setSearchParams(next, { replace: true });
-    }
-  }, [routeQueryKey, searchParams, setSearchParams]);
 
   const updateQuery = (value: string) => {
     const next = new URLSearchParams(searchParams);

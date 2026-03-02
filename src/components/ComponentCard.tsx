@@ -1,4 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion';
+import React from 'react';
 import { ComponentEntry } from '../types';
 import { classNames } from '../utils/classNames';
 import { TagChip } from './ui/TagChip';
@@ -668,7 +669,7 @@ const ComponentCardPreview = ({ component }: { component: ComponentEntry }) => {
   const family = resolvePreviewFamily(component);
   const context = buildPreviewContext(component);
 
-  let preview: JSX.Element;
+  let preview: React.ReactElement;
 
   switch (family) {
     case 'actionButtons':
