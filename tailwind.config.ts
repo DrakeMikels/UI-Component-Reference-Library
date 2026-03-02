@@ -6,8 +6,8 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"IBM Plex Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        display: ['"Source Serif 4"', 'Georgia', 'serif']
+        sans: ['"Instrument Sans"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        display: ['"Instrument Serif"', 'Georgia', 'serif']
       },
       colors: {
         ink: {

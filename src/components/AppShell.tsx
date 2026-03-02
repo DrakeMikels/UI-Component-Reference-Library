@@ -112,7 +112,7 @@ export const AppShell = () => {
   const actions = useMemo(() => [...routeActions, ...filterActions, ...featuredActions], [featuredActions, filterActions, routeActions]);
 
   return (
-    <div className="min-h-full swiss-page-bg">
+    <div className="min-h-full bg-ink-50 dark:bg-ink-900">
       <a
         href="#content"
         className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[80] focus:bg-ink-900 focus:px-3 focus:py-2 focus:text-sm focus:text-white"
@@ -120,53 +120,23 @@ export const AppShell = () => {
         Skip to content
       </a>
 
-      <header className="sticky top-0 z-40 border-b-2 border-ink-300 bg-ink-50/95 backdrop-blur-sm dark:border-ink-700 dark:bg-ink-900/95">
-        <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-4 md:px-6">
-          <div className="flex flex-wrap items-center gap-3 md:gap-5">
-            <div>
-              <p className="text-[11px] uppercase tracking-[0.32em] text-ink-500 dark:text-ink-400">Reference Index</p>
-              <h1 className="font-display text-3xl tracking-tight text-ink-900 dark:text-ink-50">Component Atlas</h1>
-            </div>
+      <header className="sticky top-0 z-40 border-b border-ink-200 bg-white/95 backdrop-blur-sm dark:border-ink-800 dark:bg-ink-950/95">
+        <div className="mx-auto flex h-14 w-full max-w-7xl items-center gap-2 px-4 md:gap-4 md:px-6">
+          <h1 className="shrink-0 font-display text-xl tracking-tight text-ink-900 dark:text-ink-50">
+            Component Atlas
+          </h1>
 
-            <label
-              htmlFor="global-search"
-              className="ml-auto flex min-w-[240px] flex-1 items-center gap-2 border border-ink-300 bg-white px-3 py-2 focus-within:ring-2 focus-within:ring-pine-500 dark:border-ink-700 dark:bg-ink-950 md:max-w-md"
-            >
-              <Search className="h-4 w-4 text-ink-500 dark:text-ink-400" aria-hidden="true" />
-              <span className="sr-only">{searchPlaceholder}</span>
-              <input
-                id="global-search"
-                value={query}
-                onChange={(event) => updateQuery(event.target.value)}
-                placeholder={searchPlaceholder}
-                className="w-full bg-transparent text-sm text-ink-900 outline-none placeholder:text-ink-500 dark:text-ink-100 dark:placeholder:text-ink-400"
-              />
-              <kbd className="hidden items-center gap-1 border border-ink-300 px-1.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-ink-500 dark:border-ink-700 dark:text-ink-400 sm:inline-flex">
-                Ctrl/Cmd+K
-              </kbd>
-            </label>
-
-            <button
-              type="button"
-              onClick={toggleTheme}
-              aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
-              className="inline-flex h-10 w-10 items-center justify-center border border-ink-300 bg-white text-ink-700 transition hover:bg-ink-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine-500 dark:border-ink-700 dark:bg-ink-950 dark:text-ink-200 dark:hover:bg-ink-800"
-            >
-              {theme === 'dark' ? <Sun className="h-4 w-4" aria-hidden="true" /> : <Moon className="h-4 w-4" aria-hidden="true" />}
-            </button>
-          </div>
-
-          <nav aria-label="Primary" className="flex flex-wrap gap-0 border-y border-ink-300 dark:border-ink-700">
+          <nav aria-label="Primary" className="ml-4 hidden items-center gap-1 sm:flex">
             {navItems.map((item) => (
               <NavLink
                 key={item.to}
                 to={item.to}
                 className={({ isActive }) =>
                   classNames(
-                    'border-r border-ink-300 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine-500 dark:border-ink-700',
+                    'rounded px-3 py-1.5 text-sm font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine-500',
                     isActive
-                      ? 'bg-ink-900 text-ink-50 dark:bg-ink-100 dark:text-ink-900'
-                      : 'bg-transparent text-ink-700 hover:bg-ink-100 dark:text-ink-200 dark:hover:bg-ink-800'
+                      ? 'bg-ink-100 text-ink-900 dark:bg-ink-800 dark:text-ink-50'
+                      : 'text-ink-500 hover:bg-ink-100 hover:text-ink-900 dark:text-ink-400 dark:hover:bg-ink-800 dark:hover:text-ink-50'
                   )
                 }
               >
@@ -174,6 +144,33 @@ export const AppShell = () => {
               </NavLink>
             ))}
           </nav>
+
+          <label
+            htmlFor="global-search"
+            className="ml-auto flex min-w-0 flex-1 items-center gap-2 border border-ink-200 bg-ink-50 px-3 py-1.5 focus-within:ring-2 focus-within:ring-pine-500 dark:border-ink-700 dark:bg-ink-900 sm:max-w-xs md:max-w-sm"
+          >
+            <Search className="h-3.5 w-3.5 shrink-0 text-ink-400 dark:text-ink-500" aria-hidden="true" />
+            <span className="sr-only">{searchPlaceholder}</span>
+            <input
+              id="global-search"
+              value={query}
+              onChange={(event) => updateQuery(event.target.value)}
+              placeholder={searchPlaceholder}
+              className="min-w-0 flex-1 bg-transparent text-sm text-ink-900 outline-none placeholder:text-ink-400 dark:text-ink-100 dark:placeholder:text-ink-500"
+            />
+            <kbd className="hidden shrink-0 items-center gap-0.5 rounded border border-ink-200 px-1.5 py-0.5 text-[10px] text-ink-400 dark:border-ink-700 dark:text-ink-500 sm:inline-flex">
+              ⌘K
+            </kbd>
+          </label>
+
+          <button
+            type="button"
+            onClick={toggleTheme}
+            aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
+            className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded text-ink-500 transition hover:bg-ink-100 hover:text-ink-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-pine-500 dark:text-ink-400 dark:hover:bg-ink-800 dark:hover:text-ink-50"
+          >
+            {theme === 'dark' ? <Sun className="h-4 w-4" aria-hidden="true" /> : <Moon className="h-4 w-4" aria-hidden="true" />}
+          </button>
         </div>
       </header>
 

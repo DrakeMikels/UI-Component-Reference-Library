@@ -150,7 +150,7 @@ export const DesignSystemsPage = () => {
       <motion.section
         initial={shouldReduceMotion ? undefined : { opacity: 0, y: 10 }}
         animate={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
-        className="swiss-grid-panel overflow-hidden border-2 border-ink-300 bg-white p-6 dark:border-ink-700 dark:bg-ink-900 md:p-10"
+        className="overflow-hidden border border-ink-200 bg-white p-6 dark:border-ink-700 dark:bg-ink-900 md:p-10"
       >
         <p className="text-[11px] uppercase tracking-[0.28em] text-ink-500 dark:text-ink-400">System Mapping</p>
         <h2 className="mt-3 font-display text-4xl leading-[1.05] tracking-tight text-ink-900 dark:text-ink-50 md:text-6xl">
@@ -162,7 +162,7 @@ export const DesignSystemsPage = () => {
         <div className="mt-6 h-px bg-ink-300 dark:bg-ink-700" />
       </motion.section>
 
-      <section className="space-y-4 border-2 border-ink-300 bg-white p-4 dark:border-ink-700 dark:bg-ink-900 md:p-5">
+      <section className="space-y-4 border border-ink-200 bg-white p-4 dark:border-ink-700 dark:bg-ink-900 md:p-5">
         <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
           <p className="text-sm text-ink-600 dark:text-ink-300">{filteredSystems.length} systems in current view</p>
           <label className="flex items-center gap-2 text-sm text-ink-700 dark:text-ink-200">
@@ -213,7 +213,7 @@ export const DesignSystemsPage = () => {
         {filteredSystems.length > 0 ? (
           filteredSystems.map((system) => <DesignSystemCard key={system.id} system={system} onSelect={openSystem} />)
         ) : (
-          <article className="col-span-full border-2 border-dashed border-ink-300 bg-white p-8 text-center dark:border-ink-700 dark:bg-ink-900">
+          <article className="col-span-full border border-dashed border-ink-200 bg-white p-8 text-center dark:border-ink-700 dark:bg-ink-900">
             <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-ink-500 dark:text-ink-400">No Results</p>
             <h3 className="mt-2 font-display text-3xl tracking-tight text-ink-900 dark:text-ink-50">No design systems match this view.</h3>
             <p className="mx-auto mt-3 max-w-2xl text-sm text-ink-700 dark:text-ink-300">

@@ -90,7 +90,7 @@ export const DesignSystemCard = ({ system, onSelect }: DesignSystemCardProps) =>
       layout
       whileHover={shouldReduceMotion ? undefined : { y: -3 }}
       transition={{ duration: 0.2 }}
-      className="group relative overflow-hidden border-2 border-ink-300 bg-white p-5 dark:border-ink-700 dark:bg-ink-900"
+      className="group relative overflow-hidden border border-ink-200 bg-white p-5 dark:border-ink-700 dark:bg-ink-900"
     >
       <button
         type="button"
